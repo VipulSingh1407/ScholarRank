@@ -7,17 +7,16 @@ import ClipPath from "../assets/svg/ClipPath";
 
 const Benefits = () => {
   return (
-    <Section id="features">
+    <Section id="features" className="border-0">
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="Chat Smarter, Not Harder with Enigma"
+          text="Unlock The Power Of  Advanced AI Models For Any Application With Our All-In-One AI System."
         />
-
-        <div className="flex flex-wrap gap-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10 mb-10">
           {benefits.map((item) => (
             <div
-              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
+              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] "
               style={{
                 backgroundImage: `url(${item.backgroundUrl})`,
               }}
