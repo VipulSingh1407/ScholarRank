@@ -11,6 +11,8 @@ import OnlineTestsPage from "./pages/OnlineTests";
 import ProCutPage from "./pages/ProCut";
 import LoginPage from "./pages/Login";
 import SignUpPage from "./pages/Signup";
+import Privacy from "./pages/App";
+import Pricing from "./pages/Pricing";
 
 const App = () => {
   
@@ -27,6 +29,8 @@ const App = () => {
         <Route path="/procut" element={<ProCutPage/>} />
         <Route path="/signin" element={<LoginPage />} />
         <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/privacy" element={<Privacy/>}/>
+        <Route path="/pricing" element={<Pricing/>}/>
         
         
      

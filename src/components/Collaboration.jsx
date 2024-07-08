@@ -1,5 +1,5 @@
-import  check from "../assets/check.svg";
-import { collabApps, collabContent, collabText } from "../constants";
+import check from "../assets/check.svg";
+import { collabApps, collabContent } from "../constants";
 import CTAButton from "./design/button";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
@@ -12,7 +12,7 @@ const Collaboration = () => {
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
           <h2 className="text-3xl font-semibold text-gray-600 mb-4 md:mb-8">
-          Effortlessly Incorporate <HighlightText text={"ScholarRankAI"}/> Into Your Existing System.
+            Effortlessly Incorporate <HighlightText text={"ScholarRankAI"} /> Into Your Existing System.
           </h2>
 
           <ul className="max-w-[22rem] mb-10 md:mb-14">
@@ -29,16 +29,12 @@ const Collaboration = () => {
             ))}
           </ul>
 
-          <CTAButton active={true} linkto={"/try"} className="w-40">
+          <CTAButton active={true} linkto={"/pricing"} className="w-40">
             <div>View Pricing</div>
           </CTAButton>
         </div>
 
         <div className="lg:ml-auto xl:w-[38rem] mt-4">
-          {/* <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
-            Integrations
-          </p> */}
-
           <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
             <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full transition transform hover:scale-150 duration-300">
               <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
@@ -61,7 +57,10 @@ const Collaboration = () => {
                     index * 45
                   }`}
                 >
-                  <div
+                  <a
+                    href={app.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${
                       index * 45
                     } transition transform hover:scale-150 duration-300`}
@@ -73,7 +72,7 @@ const Collaboration = () => {
                       alt={app.title}
                       src={app.icon}
                     />
-                  </div>
+                  </a>
                 </li>
               ))}
             </ul>

@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; /* Stylish font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ /* Dark theme background */
+  color: #fff; /* White text for contrast */
+}
+
+.App {
+  text-align: left;
+}
+
+.App-header {
+  background-color: #1e1e1e;
+  padding-top: 6.25rem;
+  border-bottom: 1px solid #333;
+}
+
+.App-heading {
+  color: cyan;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+}
+
+/* nav {
+  margin: 20px 0;
+} */
+
+button {
+  background-color: #61dafb;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+.privacy-policy {
+  padding: 6.25rem;
+}
+
+.App-subheading {
+  color: cyan;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.8rem;
+}
+
+.content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.content-section.left-align {
+  justify-content: flex-start;
+}
+
+.content-section.right-align {
+  justify-content: flex-end;
+}

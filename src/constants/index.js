@@ -65,7 +65,7 @@ export const navigation = [
     {
       id: "1",
       title: "Pricing",
-      url: "#pricing",
+      url: "/pricing",
     },
    
     {
@@ -76,13 +76,13 @@ export const navigation = [
     {
       id: "3",
       title: "Sign Up",
-      url: "#signup",
+      url: "/signup",
       onlyMobile: true,
     },
     {
       id: "4",
       title: "Log in",
-      url: "#login",
+      url: "/signin",
       onlyMobile: true,
     },
   ];
@@ -146,6 +146,7 @@ export const collabContent = [
   },
 ];
 
+
 export const collabApps = [
   {
     id: "0",
@@ -153,6 +154,7 @@ export const collabApps = [
     icon: slack,
     width: 26,
     height: 36,
+    url: "https://slack.com",
   },
   {
     id: "1",
@@ -160,6 +162,7 @@ export const collabApps = [
     icon: firebase,
     width: 34,
     height: 36,
+    url: "https://firebase.google.com",
   },
   {
     id: "2",
@@ -167,6 +170,7 @@ export const collabApps = [
     icon: webhook,
     width: 36,
     height: 28,
+    url: "https://webhook.site",
   },
   {
     id: "3",
@@ -174,6 +178,7 @@ export const collabApps = [
     icon: email,
     width: 34,
     height: 35,
+    url: "mailto:someone@example.com",
   },
   {
     id: "4",
@@ -181,6 +186,7 @@ export const collabApps = [
     icon: skyward,
     width: 34,
     height: 34,
+    url: "https://www.skyward.com",
   },
   {
     id: "5",
@@ -188,6 +194,7 @@ export const collabApps = [
     icon: tally,
     width: 34,
     height: 34,
+    url: "https://tally.so",
   },
   {
     id: "6",
@@ -195,6 +202,7 @@ export const collabApps = [
     icon: moodle,
     width: 26,
     height: 34,
+    url: "https://moodle.org",
   },
   {
     id: "7",
@@ -202,8 +210,10 @@ export const collabApps = [
     icon: brightspace,
     width: 38,
     height: 32,
+    url: "https://www.d2l.com/brightspace",
   },
 ];
+
 
 
 export const roadmap = [

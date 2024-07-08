@@ -8,6 +8,7 @@ import Collaboration from './Collaboration';
 import Products from './Products';
 import ButtonGradient from '../assets/svg/ButtonGradient';
 import Footer from './Footer';
+import Download from './Download'
 const Home = () => {
     return (
       <>
@@ -18,6 +19,7 @@ const Home = () => {
       <AIused/>
       <Collaboration/>
       <Products/>
+      <Download/>
       </div>
       <ButtonGradient/>
       

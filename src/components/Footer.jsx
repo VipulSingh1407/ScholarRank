@@ -18,10 +18,10 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Useful Links</h3>
           <ul>
             <li className="mb-2">
-              <Link to="/privacy-policy" className="hover:text-caribbeangreen-100">Privacy Policy</Link>
+              <Link to="/privacy" className="hover:text-caribbeangreen-100">Privacy Policy</Link>
             </li>
             <li className="mb-2">
-              <Link to="/playstore" className="hover:text-caribbeangreen-100">Playstore</Link>
+              <Link to="https://play.google.com/store/apps/details?id=com.scholarrank.m" className="hover:text-caribbeangreen-100">Playstore</Link>
             </li>
             <li className="mb-2">
               <Link to="/terms-of-service" className="hover:text-caribbeangreen-100">Terms of Service</Link>
