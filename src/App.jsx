@@ -13,6 +13,7 @@ import LoginPage from "./pages/Login";
 import SignUpPage from "./pages/Signup";
 import Privacy from "./pages/App";
 import Pricing from "./pages/Pricing";
+import About from './pages/About';
 
 const App = () => {
   
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/privacy" element={<Privacy/>}/>
         <Route path="/pricing" element={<Pricing/>}/>
+        <Route path="/about" element={<About/>}/>
         
         
      

@@ -9,9 +9,10 @@ export default function Component() {
           <div className="absolute inset-0 bg-black/50" />
           <div className="container mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
             <h1 className="text-center text-4xl font-bold text-white md:text-5xl lg:text-6xl">Procut</h1>
-            <p className="mt-4 text-center text-lg text-white md:text-xl lg:text-2xl">The only AI tool you need</p>
+            <p className="mt-4 text-center text-lg text-white md:text-xl lg:text-2xl">Effortlessly Create Memes, Jokes, and Marketing Videos</p>
+           
             <div className="mt-8 flex gap-4">
-              <a href="#" className="rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+              <a href="#" className="rounded-md border-blue-5 bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
                 Get started
               </a>
               <a href="#" className="rounded-md bg-accent px-6 py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/80 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2">
@@ -20,7 +21,7 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="py-16 sm:py-20 lg:py-24">
+        {/* <section className="py-16 sm:py-20 lg:py-24">
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <div>
@@ -39,12 +40,15 @@ export default function Component() {
               </div>
             </div>
           </div>
-        </section>
-        <section className="py-16 sm:py-20 lg:py-24 bg-muted">
+        </section> */}
+
+
+                <section className="py-16 sm:py-20 lg:py-24">
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl text-primary text-center">What We Offer</h2>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mt-8">
               <div className="order-2 md:order-1 flex flex-col justify-center">
-                <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl">Meme Generation</h2>
+                <h3 className="text-2xl font-semibold md:text-3xl">Meme Generation</h3>
                 <p className="mt-4 text-lg text-muted-foreground md:text-xl">
                   Start by swiftly creating humorous memes that entertain your audience and drive engagement effortlessly.
                 </p>
@@ -55,6 +59,8 @@ export default function Component() {
             </div>
           </div>
         </section>
+
+
         <section className="py-16 sm:py-20 lg:py-24">
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">

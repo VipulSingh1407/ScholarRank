@@ -9,7 +9,7 @@ import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 
 const Header = () => {
-  const { hash } = useLocation();
+  const { pathname } = useLocation(); // Use pathname instead of hash
   const [openNavigation, setOpenNavigation] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   let timeoutId = null;
@@ -57,7 +57,7 @@ const Header = () => {
               <div key={item.id} className="relative group" onMouseEnter={item.id === "0" ? handleDropdownEnter : null} onMouseLeave={item.id === "0" ? handleDropdownLeave : null}>
                 {item.subItems && item.id === "0" ? (
                   <div>
-                    <a href={item.url} onClick={handleClick} className={`block relative font-code text-4xl uppercase text-n-1 transition-colors hover:text-caribbeangreen-100 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-base lg:font-semibold ${item.url === hash ? "z-2 lg:text-n-1" : "lg:text-n-1/50"} lg:leading-5 lg:hover:text-blue xl:px-12 flex items-center`}>
+                    <a href={item.url} onClick={handleClick} className={`block relative font-code text-4xl uppercase text-n-1 transition-colors hover:text-caribbeangreen-100 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-base lg:font-semibold ${pathname === item.url ? "z-2 lg:text-caribbeangreen-100" : "lg:text-n-1/50"} lg:leading-5 lg:hover:text-blue xl:px-12 flex items-center`}>
                       {item.title}
                       <FaChevronDown className={`ml-2 transition-transform ${dropdownOpen ? "rotate-180" : ""}`} />
                     </a>
@@ -65,7 +65,7 @@ const Header = () => {
                       <div className="absolute left-0 w-64 bg-n-8 shadow-md mt-2 group-hover:block">
                         {item.subItems.map((subItem) => (
                           <div key={subItem.id} className="px-4 py-2 border-b border-n-6">
-                            <a href={subItem.url} className="block text-n-1 hover:text-caribbeangreen-100" onClick={handleClick}>
+                            <a href={subItem.url} className={`block text-n-1 hover:text-caribbeangreen-100 ${pathname === subItem.url ? "text-caribbeangreen-100" : ""}`} onClick={handleClick}>
                               <div className="font-semibold">{subItem.title}</div>
                               <div className="text-sm text-n-4">{subItem.description}</div>
                             </a>
@@ -75,7 +75,7 @@ const Header = () => {
                     )}
                   </div>
                 ) : (
-                  <a href={item.url} onClick={handleClick} className={`block relative font-code text-4xl uppercase text-n-1 transition-colors hover:text-caribbeangreen-100 ${item.onlyMobile ? "lg:hidden" : ""} px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-base lg:font-semibold ${item.url === hash ? "z-2 lg:text-n-1" : "lg:text-n-1/50"} lg:leading-5 lg:hover:text-blue xl:px-12`}>
+                  <a href={item.url} onClick={handleClick} className={`block relative font-code text-4xl uppercase text-n-1 transition-colors hover:text-caribbeangreen-100 ${item.onlyMobile ? "lg:hidden" : ""} px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-base lg:font-semibold ${pathname === item.url ? "z-2 lg:text-caribbeangreen-100" : "lg:text-n-1/50"} lg:leading-5 lg:hover:text-blue xl:px-12`}>
                     {item.title}
                   </a>
                 )}
