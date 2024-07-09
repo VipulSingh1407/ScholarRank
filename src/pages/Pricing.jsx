@@ -24,7 +24,7 @@ function PricingComponent() {
             <li className="flex items-center"><FaGem className="w-4 h-4 md:w-5 md:h-5 text-green-500 mr-2" /> AI based question generation 5 credit.</li>
           </ul>
           <div className="flex justify-center mt-6">
-            <button className="bg-green-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded transition-all duration-300">
+            <button linkto={'/signup'} className="bg-green-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded transition-all duration-300">
               Get Started →
             </button>
           </div>

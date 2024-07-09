@@ -1,107 +1,126 @@
 import React from 'react';
-import Button from '../components/Button';
-import proCutImage from '../assets/loading.png'; // Replace with actual path
-import featureImage1 from '../assets/loading.png'; // Replace with actual paths
-import featureImage2 from '../assets/loading.png';
-import featureImage3 from '../assets/loading.png';
-import ButtonGradient from '../assets/svg/ButtonGradient';
 
-const ProCutPage = () => {
+export default function Component() {
   return (
-    <>
-      <div className="container mx-auto  p-4 flex flex-col items-center justify-center">
-        {/* Main Heading Section */}
-        <h1 className="text-4xl font-bold pt-[5.25rem] mb-8 w-full text-center">ProCut</h1>
-        <div className="lg:flex lg:items-center lg:justify-center w-full mb-16">
-          <div className="lg:w-1/2 w-full lg:pr-8">
-            <h2 className="text-2xl font-semibold mb-4">Create Memes, jokes and videos</h2>
-            <p className="mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eu turpis vel iaculis. Phasellus vitae lectus posuere, bibendum velit nec, tincidunt ex.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4">
-              <Button active={true} linkto="/learn-more">
-                Learn More
-              </Button>
-              <Button active={false} linkto="/pricing">
-                Pricing
-              </Button>
+    <div className="flex min-h-screen flex-col bg-background text-foreground">
+      
+      <main className="flex-1">
+        <section className="relative h-[80vh] w-full bg-[url('/hero-bg.jpg')] bg-cover bg-center bg-no-repeat">
+          <div className="absolute inset-0 bg-black/50" />
+          <div className="container mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+            <h1 className="text-center text-4xl font-bold text-white md:text-5xl lg:text-6xl">Procut</h1>
+            <p className="mt-4 text-center text-lg text-white md:text-xl lg:text-2xl">The only AI tool you need</p>
+            <div className="mt-8 flex gap-4">
+              <a href="#" className="rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+                Get started
+              </a>
+              <a href="#" className="rounded-md bg-accent px-6 py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/80 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2">
+                View pricing
+              </a>
             </div>
           </div>
-          <div className="lg:w-1/2 w-full lg:pl-8 mt-8 lg:mt-0 flex justify-center">
-            <img
-              src={proCutImage}
-              alt="ProCut"
-              className="rounded-lg shadow-lg max-w-full"
-            />
+        </section>
+        <section className="py-16 sm:py-20 lg:py-24">
+          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+              <div>
+                <img src="/placeholder.svg" alt="Meme Generator" width={600} height={400} className="rounded-lg" />
+              </div>
+              <div className="flex flex-col justify-center">
+                <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl">Procut: Effortlessly Create Memes, Jokes, and Marketing Videos</h2>
+                <p className="mt-4 text-lg text-muted-foreground md:text-xl">
+                  With Procut, you can easily generate engaging content, including memes, jokes, and marketing videos, in just a few clicks. Whether you're looking to entertain your audience or promote your brand, Procut streamlines the creation process, saving you time and effort.
+                </p>
+                <div className="mt-8">
+                  <a href="#" className="rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+                    Coming soon....
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-
-        {/* Features Section */}
-        <div className="w-full text-center mb-16">
-          <h2 className="text-3xl font-semibold mb-4">Features</h2>
-          <p className="text-lg text-gray-600">Explore the powerful features that make ProCut unique and efficient.</p>
-        </div>
-
-        {/* Feature 1 */}
-        <div className="flex flex-col lg:flex-row items-center justify-center mb-16">
-          <div className="lg:w-1/2 w-full lg:pr-8">
-            <h3 className="text-2xl font-semibold mb-4">Feature 1</h3>
-            <ul className="list-disc list-inside text-lg text-gray-600">
-              <li>Subheading 1</li>
-              <li>Bullet point text 1</li>
-              <li>Bullet point text 2</li>
-            </ul>
+        </section>
+        <section className="py-16 sm:py-20 lg:py-24 bg-muted">
+          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+              <div className="order-2 md:order-1 flex flex-col justify-center">
+                <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl">Meme Generation</h2>
+                <p className="mt-4 text-lg text-muted-foreground md:text-xl">
+                  Start by swiftly creating humorous memes that entertain your audience and drive engagement effortlessly.
+                </p>
+              </div>
+              <div className="order-1 md:order-2">
+                <img src="/placeholder.svg" alt="Marketing Videos" width={600} height={400} className="rounded-lg" />
+              </div>
+            </div>
           </div>
-          <div className="lg:w-1/2 w-full lg:pl-8 mt-8 lg:mt-0 flex justify-center">
-            <img
-              src={featureImage1}
-              alt="Feature 1"
-              className="rounded-lg shadow-lg max-w-full"
-            />
+        </section>
+        <section className="py-16 sm:py-20 lg:py-24">
+          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+              <div>
+                <img src="/placeholder.svg" alt="User-friendly Interface" width={600} height={400} className="rounded-lg" />
+              </div>
+              <div className="flex flex-col justify-center">
+                <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl">Marketing Video Creation</h2>
+                <p className="mt-4 text-lg text-muted-foreground md:text-xl">
+                  Design captivating marketing videos to effectively promote your products or services, enhancing your brand's visibility and reach.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        {/* Feature 2 */}
-        <div className="flex flex-col lg:flex-row-reverse items-center justify-center mb-16">
-          <div className="lg:w-1/2 w-full lg:pl-8">
-            <h3 className="text-2xl font-semibold mb-4">Feature 2</h3>
-            <ul className="list-disc list-inside text-lg text-gray-600">
-              <li>Subheading 2</li>
-              <li>Bullet point text 1</li>
-              <li>Bullet point text 2</li>
-            </ul>
+        </section>
+        <section className="py-16 sm:py-20 lg:py-24 bg-muted">
+          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+              <div className="order-2 md:order-1 flex flex-col justify-center">
+                <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl">Time-Saving</h2>
+                <p className="mt-4 text-lg text-muted-foreground md:text-xl">
+                  Save valuable time and resources by utilizing Procut to generate high-quality content quickly, allowing you to focus on other essential tasks.
+                </p>
+              </div>
+              <div className="order-1 md:order-2">
+                <img src="/placeholder.svg" alt="Time-saving Solutions" width={600} height={400} className="rounded-lg" />
+              </div>
+            </div>
           </div>
-          <div className="lg:w-1/2 w-full lg:pr-8 mt-8 lg:mt-0 flex justify-center">
-            <img
-              src={featureImage2}
-              alt="Feature 2"
-              className="rounded-lg shadow-lg max-w-full"
-            />
+        </section>
+        <section className="py-16 sm:py-20 lg:py-24">
+          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+              <div>
+                <img src="/placeholder.svg" alt="Innovative Solutions" width={600} height={400} className="rounded-lg" />
+              </div>
+              <div className="flex flex-col justify-center">
+                <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl">Innovative Solutions</h2>
+                <p className="mt-4 text-lg text-muted-foreground md:text-xl">
+                  Embrace Procut as an innovative solution for content creation, empowering you to differentiate yourself in a competitive digital landscape and capture audience attention effectively.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        {/* Feature 3 */}
-        <div className="flex flex-col lg:flex-row items-center justify-center mb-16">
-          <div className="lg:w-1/2 w-full lg:pr-8">
-            <h3 className="text-2xl font-semibold mb-4">Feature 3</h3>
-            <ul className="list-disc list-inside text-lg text-gray-600">
-              <li>Subheading 3</li>
-              <li>Bullet point text 1</li>
-              <li>Bullet point text 2</li>
-            </ul>
+        </section>
+        <section className="py-16 sm:py-20 lg:py-24 bg-muted">
+          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl">
+              Ready to try it out?
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground md:text-xl">
+              Get started with Procut today and experience the power of AI-driven content creation.
+            </p>
+            <div className="mt-8 flex justify-center gap-4">
+              <a href="#" className="rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+                Get started
+              </a>
+              <a href="#" className="rounded-md bg-accent px-6 py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/80 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2">
+                View pricing
+              </a>
+            </div>
           </div>
-          <div className="lg:w-1/2 w-full lg:pl-8 mt-8 lg:mt-0 flex justify-center">
-            <img
-              src={featureImage3}
-              alt="Feature 3"
-              className="rounded-lg shadow-lg max-w-full"
-            />
-          </div>
-        </div>
-      </div>
-      <ButtonGradient/>
-    </>
+        </section>
+      </main>
+     
+    </div>
   );
-};
+}
 
-export default ProCutPage;
