@@ -1,107 +1,143 @@
 import React from 'react';
-import Button from '../components/Button';
-import onlineTestsImage from '../assets/loading.png'; // Replace with actual path
-import featureImage1 from '../assets/loading.png'; // Replace with actual paths
-import featureImage2 from '../assets/loading.png';
-import featureImage3 from '../assets/loading.png';
+import Meme from '../assets/pricing/meme.png';
+import Marketing from '../assets/pricing/marketing.png';
+import Time from '../assets/pricing/time.png';
+import Innovate from '../assets/pricing/innovate.png';
+import UI from '../assets/pricing/UI.png';
+import CTAButton from '../components/design/button';
 import ButtonGradient from '../assets/svg/ButtonGradient';
 
-const OnlineTestsPage = () => {
+export default function Component() {
   return (
-    <>
-      <div className="container mx-auto  p-4 flex flex-col items-center justify-center">
-        {/* Main Heading Section */}
-        <h1 className="text-4xl font-bold pt-[5.25rem] mb-8 w-full text-center">Online Tests</h1>
-        <div className="lg:flex lg:items-center lg:justify-center w-full mb-16">
-          <div className="lg:w-1/2 w-full lg:pr-8">
-            <h2 className="text-2xl font-semibold mb-4">Affordable and reliable online tests</h2>
-            <p className="mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eu turpis vel iaculis. Phasellus vitae lectus posuere, bibendum velit nec, tincidunt ex.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4">
-              <Button active={true} linkto="/learn-more">
-                Learn More
-              </Button>
-              <Button active={false} linkto="/pricing">
-                Pricing
-              </Button>
+    <div className="flex min-h-screen flex-col ">
+      <main className="flex-1">
+        <section className="relative bg-black/50 h-[80vh] w-full bg-center">
+          <div className="container mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+            <h1 className="text-center text-4xl font-bold text-white md:text-5xl lg:text-6xl animate-pulse">Online Testing</h1>
+            <p className="mt-4 text-center text-lg text-white md:text-xl lg:text-2xl animate-fade-in">
+            Ensuring Integrity and Convenience Through Advanced Security and Intuitive Controls                     </p>
+            <div className="mt-8 flex gap-4">
+              <CTAButton active={true} linkto={"/about"}>
+                Get Started
+              </CTAButton>
+              <CTAButton active={false} linkto={"/pricing"}>
+                View Pricing
+              </CTAButton>
             </div>
           </div>
-          <div className="lg:w-1/2 w-full lg:pl-8 mt-8 lg:mt-0 flex justify-center">
-            <img
-              src={onlineTestsImage}
-              alt="Online Tests"
-              className="rounded-lg shadow-lg max-w-full"
-            />
-          </div>
-        </div>
+        </section>
 
-        {/* Features Section */}
-        <div className="w-full text-center mb-16">
-          <h2 className="text-3xl font-semibold mb-4">Features</h2>
-          <p className="text-lg text-gray-600">Explore the powerful features that make Online Tests platform unique and efficient.</p>
-        </div>
+        <section className="py-16 sm:py-20 lg:py-24">
+          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl text-caribbeangreen-300 font-bold md:text-4xl lg:text-5xl text-primary text-center animate-bounce">What We Offer</h2>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mt-8">
+              <div className="order-2 md:order-1 flex flex-col justify-center">
+                <h3 className="text-2xl font-semibold md:text-3xl animate-fade-in">Webcam Security
 
-        {/* Feature 1 */}
-        <div className="flex flex-col lg:flex-row items-center justify-center mb-16">
-          <div className="lg:w-1/2 w-full lg:pr-8">
-            <h3 className="text-2xl font-semibold mb-4">Feature 1</h3>
-            <ul className="list-disc list-inside text-lg text-gray-600">
-              <li>Subheading 1</li>
-              <li>Bullet point text 1</li>
-              <li>Bullet point text 2</li>
-            </ul>
+</h3>
+                <p className="mt-4 text-lg text-gray-400 md:text-xl animate-fade-in">
+                Ensure test integrity with built-in webcam monitoring, effectively deterring cheating attempts and enhancing assessment reliability.                                </p>              </div>
+              <div className="order-1 md:order-2">
+                <img src={Meme} alt="Marketing Videos" width={600} height={400} className="rounded-lg animate-fade-in" />
+              </div>
+            </div>
+            <div className="border-t-4 border-caribbeangreen-100 mt-8"></div>
           </div>
-          <div className="lg:w-1/2 w-full lg:pl-8 mt-8 lg:mt-0 flex justify-center">
-            <img
-              src={featureImage1}
-              alt="Feature 1"
-              className="rounded-lg shadow-lg max-w-full"
-            />
-          </div>
-        </div>
+        </section>
 
-        {/* Feature 2 */}
-        <div className="flex flex-col lg:flex-row-reverse items-center justify-center mb-16">
-          <div className="lg:w-1/2 w-full lg:pl-8">
-            <h3 className="text-2xl font-semibold mb-4">Feature 2</h3>
-            <ul className="list-disc list-inside text-lg text-gray-600">
-              <li>Subheading 2</li>
-              <li>Bullet point text 1</li>
-              <li>Bullet point text 2</li>
-            </ul>
-          </div>
-          <div className="lg:w-1/2 w-full lg:pr-8 mt-8 lg:mt-0 flex justify-center">
-            <img
-              src={featureImage2}
-              alt="Feature 2"
-              className="rounded-lg shadow-lg max-w-full"
-            />
-          </div>
-        </div>
+        <section className="py-10 sm:py-20 lg:py-5">
+          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+              <div>
+                <img src={Marketing} alt="User-friendly Interface" width={600} height={400} className="rounded-lg animate-fade-in" />
+              </div>
+              <div className="flex flex-col justify-center">
+                <h2 className="text-2xl font-bold md:text-4xl lg:text-4xl animate-fade-in">Tab Locking
 
-        {/* Feature 3 */}
-        <div className="flex flex-col lg:flex-row items-center justify-center mb-16">
-          <div className="lg:w-1/2 w-full lg:pr-8">
-            <h3 className="text-2xl font-semibold mb-4">Feature 3</h3>
-            <ul className="list-disc list-inside text-lg text-gray-600">
-              <li>Subheading 3</li>
-              <li>Bullet point text 1</li>
-              <li>Bullet point text 2</li>
-            </ul>
+</h2>
+                <p className="mt-4 text-lg text-gray-400 md:text-xl animate-fade-in">
+                Ensure undivided attention during tests with tab locking, preventing access to other tabs or applications, thus maintaining focus and test integrity.</p>                  </div></div>
+              <div className="border-t-4 border-caribbeangreen-100 mt-8"></div>
+            </div>
+            
+        </section>
+
+        <section className="py-16 sm:py-20 lg:py-5 ">
+          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+              <div className="order-2 md:order-1 flex flex-col justify-center">
+                <h2 className="text-3xl font-bold md:text-4xl lg:text-4xl animate-fade-in">Tab Alert
+
+</h2>
+                <p className="mt-4 text-lg text-gray-400 md:text-xl animate-fade-in">
+                Receive real-time alerts with Tab Alert, notifying you instantly of any unauthorized tab switching during test sessions, enabling swift intervention to uphold test integrity. </p>              </div>
+              <div className="order-1 md:order-2">
+                <img src={Time} alt="Time-saving Solutions" width={600} height={400} className="rounded-lg animate-fade-in" />
+              </div>
+            </div>
+            <div className="border-t-4 border-caribbeangreen-100 mt-8"></div>
           </div>
-          <div className="lg:w-1/2 w-full lg:pl-8 mt-8 lg:mt-0 flex justify-center">
-            <img
-              src={featureImage3}
-              alt="Feature 3"
-              className="rounded-lg shadow-lg max-w-full"
-            />
+        </section>
+
+        <section className="py-10 sm:py-20 lg:py-5">
+          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+              <div>
+                <img src={Innovate} alt="Innovative Solutions" width={600} height={400} className="rounded-lg max-w-md animate-fade-in" />
+              </div>
+              <div className="flex flex-col justify-center">
+                <h2 className="text-3xl font-bold md:text-4xl lg:text-4xl animate-fade-in">Question Randomization
+</h2>
+                <p className="mt-4 text-lg text-gray-400 md:text-xl animate-fade-in">
+                Enhance assessment fairness and impartiality with Question Randomization, minimizing the impact of collaboration or cheating by randomizing the order of questions.
+
+
+
+
+                </p>              </div>
+            </div>
+            <div className="border-t-4 border-caribbeangreen-100 mt-8"></div>
           </div>
-        </div>
-      </div>
-      <ButtonGradient/>
-    </>
+        </section>
+
+        <section className="py-16 sm:py-20 lg:py-5 ">
+          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+              <div className="order-2 md:order-1 flex flex-col justify-center">
+                <h2 className="text-3xl font-bold md:text-4xl lg:text-4xl animate-fade-in">Auto Submission
+
+
+</h2>
+                <p className="mt-4 text-lg text-gray-400 md:text-xl animate-fade-in">
+                Ensure test completion integrity with Auto Submission, which prevents unauthorized changes by automatically submitting tests upon completion or when the time limit expires. This feature safeguards assessment consistency and fairness.</p> </div>              <div className="order-1 md:order-2">
+                <img src={Time} alt="Time-saving Solutions" width={600} height={400} className="rounded-lg animate-fade-in" />
+              </div>
+            </div>
+            <div className="border-t-4 border-caribbeangreen-100 mt-8"></div>
+          </div>
+        </section>
+
+
+        <section className="py-16 sm:py-20 lg:py-10 bg-muted">
+          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl ">
+              Ready to try it out?
+            </h2>
+            <p className="mt-4 text-lg text-gray-400 md:text-xl animate-fade-in">
+              Get started with Online Tests today and experience the power of AI-driven Testing.
+            </p>
+            <div className="mt-8 flex justify-center gap-4">
+              <CTAButton active={true} linkto={"/about"}>
+                Get Started
+              </CTAButton>
+              <CTAButton active={false} linkto={"/pricing"}>
+                View Pricing
+              </CTAButton>
+            </div>
+          </div>
+        </section>
+      </main>
+      <ButtonGradient />
+    </div>
   );
-};
-
-export default OnlineTestsPage;
+}
