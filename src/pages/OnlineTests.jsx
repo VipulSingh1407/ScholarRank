@@ -1,9 +1,9 @@
 import React from 'react';
-import Meme from '../assets/pricing/meme.png';
-import Marketing from '../assets/pricing/marketing.png';
-import Time from '../assets/pricing/time.png';
-import Innovate from '../assets/pricing/innovate.png';
-import UI from '../assets/pricing/UI.png';
+import Webcam from '../assets/pricing/webcam.png';
+import Tablock from '../assets/pricing/marketing.png';
+import Alert from '../assets/pricing/akert.png';
+import Random from '../assets/pricing/random.png';
+import Auto from '../assets/pricing/auto.png';
 import CTAButton from '../components/design/button';
 import ButtonGradient from '../assets/svg/ButtonGradient';
 
@@ -18,7 +18,7 @@ export default function Component() {
             Ensuring Integrity and Convenience Through Advanced Security and Intuitive Controls                     </p>
             <div className="mt-8 flex gap-4">
               <CTAButton active={true} linkto={"/about"}>
-                Get Started
+                Coming Soon
               </CTAButton>
               <CTAButton active={false} linkto={"/pricing"}>
                 View Pricing
@@ -38,7 +38,7 @@ export default function Component() {
                 <p className="mt-4 text-lg text-gray-400 md:text-xl animate-fade-in">
                 Ensure test integrity with built-in webcam monitoring, effectively deterring cheating attempts and enhancing assessment reliability.                                </p>              </div>
               <div className="order-1 md:order-2">
-                <img src={Meme} alt="Marketing Videos" width={600} height={400} className="rounded-lg animate-fade-in" />
+                <img src={Webcam} alt="Marketing Videos" width={600} height={400} className="rounded-lg max-w-md animate-fade-in" />
               </div>
             </div>
             <div className="border-t-4 border-caribbeangreen-100 mt-8"></div>
@@ -49,7 +49,7 @@ export default function Component() {
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <div>
-                <img src={Marketing} alt="User-friendly Interface" width={600} height={400} className="rounded-lg animate-fade-in" />
+                <img src={Tablock} alt="User-friendly Interface" width={600} height={400} className="rounded-lg max-w-md animate-fade-in" />
               </div>
               <div className="flex flex-col justify-center">
                 <h2 className="text-2xl font-bold md:text-4xl lg:text-4xl animate-fade-in">Tab Locking
@@ -72,7 +72,7 @@ export default function Component() {
                 <p className="mt-4 text-lg text-gray-400 md:text-xl animate-fade-in">
                 Receive real-time alerts with Tab Alert, notifying you instantly of any unauthorized tab switching during test sessions, enabling swift intervention to uphold test integrity. </p>              </div>
               <div className="order-1 md:order-2">
-                <img src={Time} alt="Time-saving Solutions" width={600} height={400} className="rounded-lg animate-fade-in" />
+                <img src={Alert} alt="Time-saving Solutions" width={600} height={400} className="rounded-lg max-w-md animate-fade-in" />
               </div>
             </div>
             <div className="border-t-4 border-caribbeangreen-100 mt-8"></div>
@@ -83,7 +83,7 @@ export default function Component() {
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <div>
-                <img src={Innovate} alt="Innovative Solutions" width={600} height={400} className="rounded-lg max-w-md animate-fade-in" />
+                <img src={Random} alt="Innovative Solutions" width={600} height={400} className="rounded-lg max-w-md animate-fade-in" />
               </div>
               <div className="flex flex-col justify-center">
                 <h2 className="text-3xl font-bold md:text-4xl lg:text-4xl animate-fade-in">Question Randomization
@@ -110,7 +110,7 @@ export default function Component() {
 </h2>
                 <p className="mt-4 text-lg text-gray-400 md:text-xl animate-fade-in">
                 Ensure test completion integrity with Auto Submission, which prevents unauthorized changes by automatically submitting tests upon completion or when the time limit expires. This feature safeguards assessment consistency and fairness.</p> </div>              <div className="order-1 md:order-2">
-                <img src={Time} alt="Time-saving Solutions" width={600} height={400} className="rounded-lg animate-fade-in" />
+                <img src={Auto} alt="Time-saving Solutions" width={600} height={400} className="rounded-lg max-w-md animate-fade-in" />
               </div>
             </div>
             <div className="border-t-4 border-caribbeangreen-100 mt-8"></div>
@@ -128,7 +128,7 @@ export default function Component() {
             </p>
             <div className="mt-8 flex justify-center gap-4">
               <CTAButton active={true} linkto={"/about"}>
-                Get Started
+                Coming Soon
               </CTAButton>
               <CTAButton active={false} linkto={"/pricing"}>
                 View Pricing

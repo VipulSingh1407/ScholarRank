@@ -1,8 +1,8 @@
 import React from 'react';
-import Meme from '../assets/pricing/meme.png';
-import Marketing from '../assets/pricing/marketing.png';
+import Ask from '../assets/pricing/Ask.png';
+import Versatile from '../assets/pricing/Versatile.png';
 import Time from '../assets/pricing/time.png';
-import Innovate from '../assets/pricing/innovate.png';
+import Effortless from '../assets/pricing/effortless.png';
 import UI from '../assets/pricing/UI.png';
 import CTAButton from '../components/design/button';
 import ButtonGradient from '../assets/svg/ButtonGradient';
@@ -18,7 +18,7 @@ export default function Component() {
             Your personal AI-powered chat companion,Ask Anything.
             </p>
             <div className="mt-8 flex gap-4">
-              <CTAButton active={true} linkto={"/about"}>
+              <CTAButton active={true} linkto={"https://app.scholarrank.com/user/ask?returnUrl=%2Fuser%2Fdashboard"}>
                 Get Started
               </CTAButton>
               <CTAButton active={false} linkto={"/pricing"}>
@@ -39,7 +39,7 @@ export default function Component() {
                 </p>
               </div>
               <div className="order-1 md:order-2">
-                <img src={Meme} alt="Marketing Videos" width={600} height={400} className="rounded-lg animate-fade-in" />
+                <img src={Ask} alt="Marketing Videos" width={600} height={400} className="rounded-lg max-w-md animate-fade-in" />
               </div>
             </div>
             <div className="border-t-4 border-caribbeangreen-100 mt-8"></div>
@@ -50,7 +50,7 @@ export default function Component() {
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <div>
-                <img src={Marketing} alt="User-friendly Interface" width={600} height={400} className="rounded-lg animate-fade-in" />
+                <img src={Versatile} alt="User-friendly Interface" width={600} height={400} className="rounded-lg max-w-md animate-fade-in" />
               </div>
               <div className="flex flex-col justify-center">
                 <h2 className="text-3xl font-bold md:text-4xl lg:text-4xl animate-fade-in">Versatile Assistance</h2>
@@ -83,7 +83,7 @@ export default function Component() {
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <div>
-                <img src={Innovate} alt="Innovative Solutions" width={600} height={400} className="rounded-lg max-w-md animate-fade-in" />
+                <img src={Effortless} alt="Innovative Solutions" width={600} height={400} className="rounded-lg max-w-md animate-fade-in" />
               </div>
               <div className="flex flex-col justify-center">
                 <h2 className="text-3xl font-bold md:text-4xl lg:text-4xl animate-fade-in">Effortless Conversations</h2>
@@ -105,7 +105,7 @@ export default function Component() {
               Get started with Ask AI today and experience the power of AI-driven chats.
             </p>
             <div className="mt-8 flex justify-center gap-4">
-              <CTAButton active={true} linkto={"/about"}>
+              <CTAButton active={true} linkto={"https://app.scholarrank.com/user/ask?returnUrl=%2Fuser%2Fdashboard"}>
                 Get Started
               </CTAButton>
               <CTAButton active={false} linkto={"/pricing"}>

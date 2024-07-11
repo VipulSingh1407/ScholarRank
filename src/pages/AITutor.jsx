@@ -1,8 +1,8 @@
 import React from 'react';
-import Meme from '../assets/pricing/meme.png';
-import Marketing from '../assets/pricing/marketing.png';
-import Time from '../assets/pricing/time.png';
-import Innovate from '../assets/pricing/innovate.png';
+import Personalized from '../assets/pricing/personalized.png';
+import Effortless from '../assets/pricing/effortless.png';
+import Flexible from '../assets/pricing/flexible.png';
+import Accessible from '../assets/pricing/accessible.png';
 import UI from '../assets/pricing/UI.png';
 import CTAButton from '../components/design/button';
 import ButtonGradient from '../assets/svg/ButtonGradient';
@@ -18,7 +18,7 @@ export default function Component() {
             Your Ultimate Personalized Learning Companion            </p>
             <div className="mt-8 flex gap-4">
               <CTAButton active={true} linkto={"/about"}>
-                Get Started
+                Coming Soon
               </CTAButton>
               <CTAButton active={false} linkto={"/pricing"}>
                 View Pricing
@@ -37,7 +37,7 @@ export default function Component() {
                 <p className="mt-4 text-lg text-gray-400 md:text-xl animate-fade-in">
                 Embark on your learning journey with AI Tutor, where personalized experiences cater to your unique needs and preferences. Enjoy customized guidance that enhances your learning process, making education more effective and engaging.                  </p>              </div>
               <div className="order-1 md:order-2">
-                <img src={Meme} alt="Marketing Videos" width={600} height={400} className="rounded-lg animate-fade-in" />
+                <img src={Personalized} alt="Marketing Videos" width={600} height={400} className="rounded-lg max-w-md animate-fade-in" />
               </div>
             </div>
             <div className="border-t-4 border-caribbeangreen-100 mt-8"></div>
@@ -48,7 +48,7 @@ export default function Component() {
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <div>
-                <img src={Marketing} alt="User-friendly Interface" width={600} height={400} className="rounded-lg animate-fade-in" />
+                <img src={Effortless} alt="User-friendly Interface" width={600} height={400} className="rounded-lg max-w-md animate-fade-in" />
               </div>
               <div className="flex flex-col justify-center">
                 <h2 className="text-2xl font-bold md:text-4xl lg:text-4xl animate-fade-in">Effortless Learning
@@ -71,7 +71,7 @@ export default function Component() {
                 Enjoy flexible learning with AI Tutor, where you can progress at your own pace and convenience, shaping your learning schedule to suit your lifestyle and preferences.                                   </p>
               </div>
               <div className="order-1 md:order-2">
-                <img src={Time} alt="Time-saving Solutions" width={600} height={400} className="rounded-lg animate-fade-in" />
+                <img src={Flexible} alt="Time-saving Solutions" width={600} height={400} className="rounded-lg max-w-sm animate-fade-in" />
               </div>
             </div>
             <div className="border-t-4 border-caribbeangreen-100 mt-8"></div>
@@ -82,7 +82,7 @@ export default function Component() {
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <div>
-                <img src={Innovate} alt="Innovative Solutions" width={600} height={400} className="rounded-lg max-w-md animate-fade-in" />
+                <img src={Accessible} alt="Innovative Solutions" width={600} height={400} className="rounded-lg max-w-md animate-fade-in" />
               </div>
               <div className="flex flex-col justify-center">
                 <h2 className="text-3xl font-bold md:text-4xl lg:text-4xl animate-fade-in">Accessible Learning
@@ -111,7 +111,7 @@ export default function Component() {
             </p>
             <div className="mt-8 flex justify-center gap-4">
               <CTAButton active={true} linkto={"/about"}>
-                Get Started
+                Coming Soon
               </CTAButton>
               <CTAButton active={false} linkto={"/pricing"}>
                 View Pricing

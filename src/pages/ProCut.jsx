@@ -19,7 +19,7 @@ export default function Component() {
             </p>
             <div className="mt-8 flex gap-4">
               <CTAButton active={true} linkto={"/about"}>
-                Get Started
+                Coming Soon
               </CTAButton>
               <CTAButton active={false} linkto={"/pricing"}>
                 View Pricing
@@ -124,7 +124,7 @@ export default function Component() {
             </p>
             <div className="mt-8 flex justify-center gap-4">
               <CTAButton active={true} linkto={"/about"}>
-                Get Started
+                Coming Soon
               </CTAButton>
               <CTAButton active={false} linkto={"/pricing"}>
                 View Pricing
