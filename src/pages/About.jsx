@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import Card from '../components/Card'; // Adjust the path based on your project structur
-import './styles.css'; // Import your CSS file if you have styles
+import Card from '../components/Card'; 
+import './styles.css'; 
 import Mission from '../assets/notification/Mission.png'
 import Vision from '../assets/notification/Vision.png'
 import Team from '../assets/notification/Team.png'
@@ -16,7 +16,7 @@ function Component() {
         sections.current.forEach((section, index) => {
             setTimeout(() => {
                 section.classList.add('visible');
-            }, index * 300); // Delay for each section
+            }, index * 300);
         });
     }, []);
 
@@ -36,7 +36,7 @@ function Component() {
                                 </p>
                             </div>
                             <img
-                                src={Mission} // Update with your image path
+                                src={Mission} 
                                 width="500"
                                 height="500"
                                 alt="Mission"
@@ -49,7 +49,7 @@ function Component() {
                     <div className="container px-4 md:px-6">
                         <div className="grid gap-10 sm:px-10 md:gap-16 md:grid-cols-2">
                             <img
-                                src={Vision} // Update with your image path
+                                src={Vision} 
                                 width="550"
                             height="310"
                                 alt="Vision"
@@ -80,7 +80,7 @@ function Component() {
                                 </p>
                             </div>
                             <img
-                                src={Team} // Update with your image path
+                                src={Team} 
                                 width="550"
                                 height="310"
                                 alt="Who We Are"
@@ -93,7 +93,7 @@ function Component() {
                     <div className="container px-4 md:px-6">
                         <div className="grid gap-10 sm:px-10 md:gap-16 md:grid-cols-2">
                             <img
-                                src={Contact}// Update with your image path
+                                src={Contact}
                                 width="550"
                                 height="310"
                                 alt="Contact Us"
